@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E4CE1DD2862D2960033294C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4CE1DC2862D2960033294C /* DetailViewController.swift */; };
+		8E4CE1DF2862D6AB0033294C /* Creature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4CE1DE2862D6AB0033294C /* Creature.swift */; };
+		8E4CE1E12862D83C0033294C /* CreatureDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4CE1E02862D83C0033294C /* CreatureDetail.swift */; };
 		8EEB86002862AE640099E8BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEB85FF2862AE640099E8BC /* AppDelegate.swift */; };
 		8EEB86022862AE640099E8BC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEB86012862AE640099E8BC /* SceneDelegate.swift */; };
 		8EEB86042862AE640099E8BC /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEB86032862AE640099E8BC /* ListViewController.swift */; };
@@ -17,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8E4CE1DC2862D2960033294C /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		8E4CE1DE2862D6AB0033294C /* Creature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Creature.swift; sourceTree = "<group>"; };
+		8E4CE1E02862D83C0033294C /* CreatureDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatureDetail.swift; sourceTree = "<group>"; };
 		8EEB85FC2862AE640099E8BC /* Catch 'em all.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Catch 'em all.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EEB85FF2862AE640099E8BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8EEB86012862AE640099E8BC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,8 +66,11 @@
 			children = (
 				8EEB85FF2862AE640099E8BC /* AppDelegate.swift */,
 				8EEB86012862AE640099E8BC /* SceneDelegate.swift */,
+				8E4CE1DE2862D6AB0033294C /* Creature.swift */,
 				8EEB86132862B4890099E8BC /* Creatures.swift */,
+				8E4CE1E02862D83C0033294C /* CreatureDetail.swift */,
 				8EEB86032862AE640099E8BC /* ListViewController.swift */,
+				8E4CE1DC2862D2960033294C /* DetailViewController.swift */,
 				8EEB86052862AE640099E8BC /* Main.storyboard */,
 				8EEB86082862AE650099E8BC /* Assets.xcassets */,
 				8EEB860A2862AE650099E8BC /* LaunchScreen.storyboard */,
@@ -143,6 +152,9 @@
 			files = (
 				8EEB86142862B4890099E8BC /* Creatures.swift in Sources */,
 				8EEB86042862AE640099E8BC /* ListViewController.swift in Sources */,
+				8E4CE1DF2862D6AB0033294C /* Creature.swift in Sources */,
+				8E4CE1DD2862D2960033294C /* DetailViewController.swift in Sources */,
+				8E4CE1E12862D83C0033294C /* CreatureDetail.swift in Sources */,
 				8EEB86002862AE640099E8BC /* AppDelegate.swift in Sources */,
 				8EEB86022862AE640099E8BC /* SceneDelegate.swift in Sources */,
 			);
