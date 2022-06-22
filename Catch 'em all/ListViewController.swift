@@ -20,9 +20,28 @@ class ListViewController: UIViewController {
         
         creatures.getData {
             DispatchQueue.main.async {
+                self.navigationItem.title = "\(self.creatures.creatureArray.count) of \(self.creatures.count) Pokemon"
                 self.tableView.reloadData()
             }
         }
+    }
+    
+    func loadAll() {
+        if creatures.urlString.hasPrefix("http") {
+            creatures.getData {
+                DispatchQueue.main.async {
+                    self.navigationItem.title = "\(self.creatures.creatureArray.count) of \(self.creatures.count) Pokemon"
+                    self.tableView.reloadData()
+                }
+                self.loadAll()
+            }
+        } else {
+            print("All done - all loaded. Total Pokemon = \(creatures.creatureArray.count)")
+        }
+    }
+    
+    @IBAction func loadAllButtonPressed(_ sender: Any) {
+        loadAll()
     }
 }
 
@@ -32,11 +51,11 @@ extension ListViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        print("\(indexPath.row+1) of \(creatures.creatureArray.count)")
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         if indexPath.row == creatures.creatureArray.count-1 && creatures.urlString.hasPrefix("http") {
             creatures.getData {
                 DispatchQueue.main.async {
+                    self.navigationItem.title = "\(self.creatures.creatureArray.count) of \(self.creatures.count) Pokemon"
                     self.tableView.reloadData()
                 }
             }
